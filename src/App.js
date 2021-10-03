@@ -9,6 +9,7 @@ export default function App() {
   };
 
   hola();
+
   return (
     <div className='App'>
       <Header />
