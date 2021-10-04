@@ -1,3 +1,116 @@
 .Content {
-  background-color: #ffffff;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 370px);
+  justify-content: center;
+}
+
+.Content .card {
+  width: 347px;
+  height: 419px;
+  max-width: 419px;
+  background-color: #272c3d;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  transition: all ease 200ms;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.Content .card:hover {
+  background-color: #2f3549;
+}
+
+.Content .card .card_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Content .card .card_top .card_top_id {
+  color: #6d6d6d;
+  font-size: 25px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.Content .card .card_top .card_top_type {
+  border-radius: 15px;
+  padding: 5px 10px;
+  border: 1px solid #4caf50;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: #4caf50;
+  font-size: 13px;
+}
+
+.Content .card .card_img {
+  max-width: 155px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+.Content .card .card_name {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #d3d3d3;
+}
+
+.Content .card .card_bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  height: 100px;
+  max-height: 100px;
+}
+
+.Content .card .card_bottom img {
+  max-width: 30px;
+}
+
+.Content .card .card_bottom span {
+  font-size: 25px;
+  vertical-align: super;
+  margin-left: 5px;
+  color: #969696;
+}
+
+.Content .card_bottom .card_bottom .card_bottom_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Content .card_bottom .card_bottom .card_bottom_left .card_bottom_left_atk {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+}
+
+.Content .card_bottom .card_bottom .card_bottom_left .card_bottom_left_def {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+}
+
+.Content .card_bottom .card_bottom .card_bottom_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

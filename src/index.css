@@ -7,11 +7,13 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Sections
@@ -23,6 +25,8 @@ html {
 
 body {
   margin: 0;
+  background-color: #191d29;
+  color: #ffffff;
 }
 
 /**

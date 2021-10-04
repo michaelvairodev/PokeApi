@@ -1,3 +1,102 @@
 .Header {
-  background-color: #ffffff;
+  background-color: #272c3d;
+  height: 100px;
+  max-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  -webkit-box-shadow: 0px 4px 5px 0px #0f0f0fbf;
+  -moz-box-shadow: 0px 4px 5px 0px #0f0f0fbf;
+  box-shadow: 0px 4px 5px 0px #0f0f0fbf;
+}
+
+.Header img {
+  width: 150px;
+}
+
+.Header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header ul li {
+  margin-left: 20px;
+  margin-right: 20px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.Header ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #d1d1d1;
+  font-size: 20px;
+  transition: all ease 200ms;
+}
+
+.Header ul li a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.Header ul li button {
+  background-color: #feca1b;
+  border: 0;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #000000;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all ease 200ms;
+}
+
+.Header ul li button:hover {
+  opacity: 1;
+}
+
+.Header .menu_responsive {
+  display: none;
+  background: none;
+  border: none;
+  outline: none;
+  max-width: 72px;
+  cursor: pointer;
+}
+
+.Header .menu_responsive img {
+  width: 100%;
+  max-width: 72px;
+}
+
+@media (max-width: 825px) {
+  .Header {
+    justify-content: space-around;
+  }
+
+  .Header .menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 100px;
+    z-index: 100;
+    width: 200px;
+    height: 100%;
+    background-color: #34394a;
+    margin: 0;
+    flex-direction: column;
+    padding: 0;
+    justify-content: flex-start;
+    padding-top: 80px;
+  }
+
+  .Header .menu li {
+    margin-top: 20px;
+  }
+
+  .Header .menu_responsive {
+    display: block;
+  }
 }
